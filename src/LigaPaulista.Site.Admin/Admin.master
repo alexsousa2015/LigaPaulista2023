@@ -1,0 +1,120 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="LigaPaulista.Site.Admin.Templates_Admin" CodeBehind="Admin.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Administração - Sistemas Formula Web</title>
+    <link type="text/css" rel="stylesheet" href="../App_Themes/Admin/principal.css" />
+    <script src="../scripts/popupControl.js" type="text/javascript"></script>
+    <script type="text/javascript" language="javascript" src="../scripts/funcoes.js"></script>
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="description" content="The description of my page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <dxpc:ASPxPopupControl ID="ASPxPopupControl1" runat="server" AllowDragging="True"
+        ContentUrl="~/adm/fileManager.aspx" HeaderText="Upload de Arquivos" Height="550px"
+        Modal="True" PopupElementID="btn_updArquivos" PopupHorizontalAlign="WindowCenter"
+        PopupVerticalAlign="WindowCenter" Width="670px" ClientInstanceName="popGerenciador">
+    </dxpc:ASPxPopupControl>
+    <div id="estrutura">
+        <!-- estrutura -->
+        <div id="topo">
+            <!-- topo -->
+            <a href="default.aspx">
+                <img src="../App_Themes/Admin/Images/top01.jpg" alt="" style="float: left;" />
+            </a>
+            <div id="menu" style="clear: both; width: 100%; background-color: #ededed; border: 1px solid #666;">
+                <!-- menu -->
+                <dxm:ASPxMenu ID="ASPxMenu1" runat="server" AutoSeparators="RootOnly" SeparatorColor="#16171B"
+                    SeparatorHeight="100%" SeparatorWidth="1px" ShowPopOutImages="True" BorderBetweenItemAndSubMenu="HideAll">
+                    <Items>
+                        <dxm:MenuItem Text="Home" NavigateUrl="default.aspx">
+                        </dxm:MenuItem>
+                        <dxm:MenuItem Text="Artilharia">
+                            <Items>
+                                <dxm:MenuItem Text="Períodos" NavigateUrl="periodos.aspx">
+                                </dxm:MenuItem>
+                                <dxm:MenuItem Text="Categorias" NavigateUrl="artilheiros_categorias.aspx">
+                                </dxm:MenuItem>
+                                <dxm:MenuItem Text="Gols/Cestas" NavigateUrl="artilheiros.aspx">
+                                </dxm:MenuItem>
+                            </Items>
+                        </dxm:MenuItem>
+                        <dxm:MenuItem Text="Campeonatos" NavigateUrl="#">
+                            <Items>
+                                <dxm:MenuItem Text="Modalidades" NavigateUrl="modalidades.aspx">
+                                </dxm:MenuItem>
+                                <dxm:MenuItem Text="Localidades" NavigateUrl="localidades.aspx">
+                                </dxm:MenuItem>
+                                <dxm:MenuItem Text="Jogos" NavigateUrl="Jogos.aspx">
+                                </dxm:MenuItem>
+                                <dxw:MenuItem Text="Cartões dos Atletas" NavigateUrl="cartoesatletas.aspx" >
+                                </dxw:MenuItem>
+                                <dxw:MenuItem Text="Calendário" NavigateUrl="calendarios.aspx" >
+                                </dxw:MenuItem>
+                            </Items>
+                        </dxm:MenuItem>
+                        <dxm:MenuItem Text="Galeria de Fotos">
+                            <Items>
+                                <dxm:MenuItem Text="Listagem" NavigateUrl="album.aspx">
+                                </dxm:MenuItem>
+                                <dxm:MenuItem Text="Incluir Categoria" NavigateUrl="album_categoria.aspx">
+                                </dxm:MenuItem>
+                                <dxm:MenuItem Text="Incluir Álbum" NavigateUrl="album_add.aspx">
+                                </dxm:MenuItem>
+                            </Items>
+                        </dxm:MenuItem>
+                        <dxm:MenuItem Text="Carteirinhas">
+                            <Items>
+                                <dxm:MenuItem Text="Listagem" NavigateUrl="eventos.aspx">
+                                </dxm:MenuItem>
+                                <dxm:MenuItem Text="Ver Documentaçao" NavigateUrl="eventos-inscricoes.aspx">
+                                </dxm:MenuItem>
+                                <dxm:MenuItem Text="Pedidos de Carteirinhas" NavigateUrl="pedidos-carteirinhas.aspx">
+                                </dxm:MenuItem>
+                            </Items>
+                        </dxm:MenuItem>
+                        <dxm:MenuItem Text="Cadastros" NavigateUrl="cadastro.aspx">
+                            <Items>
+                                <dxm:MenuItem Text="Completo" NavigateUrl="cadastro.aspx">
+                                </dxm:MenuItem>
+                                <dxm:MenuItem Text="Simplificado" NavigateUrl="cadastro-simples.aspx">
+                                </dxm:MenuItem>
+                            </Items>
+                        </dxm:MenuItem>
+                        <dxm:MenuItem Text="Entidades" NavigateUrl="EntidadesAdm.aspx">
+                        </dxm:MenuItem>
+                        <dxm:MenuItem Text="Usuários" NavigateUrl="usuarios.aspx">
+                        </dxm:MenuItem>
+                        <dxm:MenuItem Text="Sair" NavigateUrl="login.aspx?logout=true">
+                        </dxm:MenuItem>
+                    </Items>
+                    <SubMenuStyle GutterWidth="0px" />
+                    <HorizontalPopOutImage Height="7px" Width="7px" />
+                    <SubMenuItemStyle Wrap="False">
+                    </SubMenuItemStyle>
+                </dxm:ASPxMenu>
+            </div>
+            <!-- menu -->
+        </div>
+        <!-- topo -->
+        <div id="meio">
+            <!-- meio -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- meio -->
+        <div id="rodape">
+            <!-- rodape -->
+        </div>
+        <!-- rodape -->
+    </div>
+    <!-- estrutura -->
+    </form>
+</body>
+</html>

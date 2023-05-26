@@ -1,0 +1,61 @@
+D:\BitbucketFW\fw-ligapaulista\LigaPaulista.Core\bin\Release\LigaPaulista.Core.dll
+D:\BitbucketFW\fw-ligapaulista\LigaPaulista.Core\bin\Release\LigaPaulista.Core.pdb
+D:\BitbucketFW\fw-ligapaulista\LigaPaulista.Core\bin\Release\Elmah.dll
+D:\BitbucketFW\fw-ligapaulista\LigaPaulista.Core\bin\Release\Facebook.dll
+D:\BitbucketFW\fw-ligapaulista\LigaPaulista.Core\bin\Release\Formula.dll
+D:\BitbucketFW\fw-ligapaulista\LigaPaulista.Core\bin\Release\MySql.Data.dll
+D:\BitbucketFW\fw-ligapaulista\LigaPaulista.Core\bin\Release\Google.GData.Photos.dll
+D:\BitbucketFW\fw-ligapaulista\LigaPaulista.Core\bin\Release\Google.GData.Client.dll
+D:\BitbucketFW\fw-ligapaulista\LigaPaulista.Core\bin\Release\Google.GData.Extensions.dll
+D:\BitbucketFW\fw-ligapaulista\LigaPaulista.Core\bin\Release\Formula.pdb
+D:\BitbucketFW\fw-ligapaulista\LigaPaulista.Core\obj\Release\LigaPaulista.Core.csprojResolveAssemblyReference.cache
+D:\BitbucketFW\fw-ligapaulista\LigaPaulista.Core\obj\Release\LigaPaulista.Core.dll
+D:\BitbucketFW\fw-ligapaulista\LigaPaulista.Core\obj\Release\LigaPaulista.Core.pdb
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\bin\Release\LigaPaulista.Core.dll
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\bin\Release\LigaPaulista.Core.pdb
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\bin\Release\Facebook.dll
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\bin\Release\Formula.dll
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\bin\Release\MySql.Data.dll
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\bin\Release\Google.GData.Photos.dll
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\bin\Release\Google.GData.Client.dll
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\bin\Release\Google.GData.Extensions.dll
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\bin\Release\Formula.pdb
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\obj\Release\LigaPaulista.Core.csprojResolveAssemblyReference.cache
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\obj\Release\LigaPaulista.Core.dll
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\obj\Release\LigaPaulista.Core.pdb
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\bin\Release\LigaPaulista.Core.dll
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\bin\Release\LigaPaulista.Core.pdb
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\bin\Release\Facebook.dll
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\bin\Release\Formula.dll
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\bin\Release\MySql.Data.dll
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\bin\Release\Google.GData.Photos.dll
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\bin\Release\Google.GData.Client.dll
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\bin\Release\Google.GData.Extensions.dll
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\bin\Release\Formula.pdb
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\obj\Release\LigaPaulista.Core.csprojResolveAssemblyReference.cache
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\obj\Release\LigaPaulista.Core.dll
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\obj\Release\LigaPaulista.Core.pdb
+C:\Dev\ligapaulista\LigaPaulista.Core\bin\Release\LigaPaulista.Core.dll
+C:\Dev\ligapaulista\LigaPaulista.Core\bin\Release\LigaPaulista.Core.pdb
+C:\Dev\ligapaulista\LigaPaulista.Core\bin\Release\MySql.Data.dll
+C:\Dev\ligapaulista\LigaPaulista.Core\bin\Release\Google.GData.Photos.dll
+C:\Dev\ligapaulista\LigaPaulista.Core\bin\Release\Google.GData.Client.dll
+C:\Dev\ligapaulista\LigaPaulista.Core\bin\Release\Google.GData.Extensions.dll
+C:\Dev\ligapaulista\LigaPaulista.Core\bin\Release\Formula.pdb
+C:\Dev\ligapaulista\LigaPaulista.Core\obj\Release\LigaPaulista.Core.csprojResolveAssemblyReference.cache
+C:\Dev\ligapaulista\LigaPaulista.Core\obj\Release\LigaPaulista.Core.dll
+C:\Dev\ligapaulista\LigaPaulista.Core\obj\Release\LigaPaulista.Core.pdb
+C:\Dev\LigaPaulista\src\LigaPaulista.Core\bin\Release\LigaPaulista.Core.dll
+C:\Dev\LigaPaulista\src\LigaPaulista.Core\bin\Release\LigaPaulista.Core.pdb
+C:\Dev\LigaPaulista\src\LigaPaulista.Core\bin\Release\Formula.dll
+C:\Dev\LigaPaulista\src\LigaPaulista.Core\obj\Release\LigaPaulista.Core.dll
+C:\Dev\LigaPaulista\src\LigaPaulista.Core\obj\Release\LigaPaulista.Core.pdb
+C:\Dev\LigaPaulista\src\LigaPaulista.Core\obj\Release\LigaPaulista.Core.csprojResolveAssemblyReference.cache
+C:\Projetos extra\LigaPaulista\master\src\LigaPaulista.Core\bin\Release\LigaPaulista.Core.dll
+C:\Projetos extra\LigaPaulista\master\src\LigaPaulista.Core\bin\Release\LigaPaulista.Core.pdb
+C:\Projetos extra\LigaPaulista\master\src\LigaPaulista.Core\bin\Release\Formula.dll
+C:\Projetos extra\LigaPaulista\master\src\LigaPaulista.Core\obj\Release\LigaPaulista.Core.dll
+C:\Projetos extra\LigaPaulista\master\src\LigaPaulista.Core\obj\Release\LigaPaulista.Core.pdb
+C:\Projetos extra\LigaPaulista\master\src\LigaPaulista.Core\obj\Release\LigaPaulista.Core.csprojAssemblyReference.cache
+C:\Projetos extra\LigaPaulista\master\src\LigaPaulista.Core\obj\Release\LigaPaulista.Core.csproj.CoreCompileInputs.cache
+C:\Projetos extra\LigaPaulista\master\src\LigaPaulista.Core\obj\Release\LigaPaulista.Core.csproj.CopyComplete

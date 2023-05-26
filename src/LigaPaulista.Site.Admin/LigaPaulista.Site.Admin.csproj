@@ -1,0 +1,852 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{160BB469-F440-4FD0-83AB-CCC3D1370847}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LigaPaulista.Site.Admin</RootNamespace>
+    <AssemblyName>LigaPaulista.Site.Admin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\LigaPaulista2013.Site\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\deploy\bin\DevExpress.Data.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\deploy\bin\DevExpress.Images.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\deploy\bin\DevExpress.Office.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v15.2.Core, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\deploy\bin\DevExpress.Pdf.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v15.2.Drawing, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\deploy\bin\DevExpress.Pdf.v15.2.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\deploy\bin\DevExpress.Printing.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\deploy\bin\DevExpress.RichEdit.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\deploy\bin\DevExpress.Sparkline.v15.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\deploy\bin\DevExpress.Utils.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\deploy\bin\DevExpress.Web.ASPxThemes.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\deploy\bin\DevExpress.Web.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\deploy\bin\DevExpress.XtraBars.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\deploy\bin\DevExpress.XtraEditors.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\deploy\bin\DevExpress.XtraLayout.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\deploy\bin\DevExpress.XtraPrinting.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\deploy\bin\DevExpress.XtraRichEdit.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\deploy\bin\DevExpress.XtraTreeList.v15.2.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\LigaPaulista2013.Site\bin\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Formula">
+      <HintPath>..\LigaPaulista2013.Site\bin\Formula.dll</HintPath>
+    </Reference>
+    <Reference Include="Formula.Fakes">
+      <HintPath>..\LigaPaulista2013.Site\bin\Formula.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeTextBox">
+      <HintPath>..\LigaPaulista2013.Site\bin\FreeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="IZ.WebFileManager">
+      <HintPath>..\LigaPaulista2013.Site\bin\IZ.WebFileManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin.master">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="scripts\images\Sorting icons.psd" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="album.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="album_add.aspx" />
+    <Content Include="album_categoria.aspx" />
+    <Content Include="album_fotos.aspx" />
+    <Content Include="album_fotos_lista.aspx" />
+    <Content Include="App_Themes\Admin\ajaxPopup.css" />
+    <Content Include="App_Themes\Admin\calendario.css" />
+    <Content Include="App_Themes\Admin\form.css" />
+    <Content Include="App_Themes\Admin\form.import.css" />
+    <Content Include="App_Themes\Admin\Images\6098_16x16.png" />
+    <Content Include="App_Themes\Admin\Images\add-trans.png" />
+    <Content Include="App_Themes\Admin\Images\bgTop.jpg" />
+    <Content Include="App_Themes\Admin\Images\bt_excluir.gif" />
+    <Content Include="App_Themes\Admin\Images\delete.gif" />
+    <Content Include="App_Themes\Admin\Images\del_16.gif" />
+    <Content Include="App_Themes\Admin\Images\down.png" />
+    <Content Include="App_Themes\Admin\Images\edit_16.gif" />
+    <Content Include="App_Themes\Admin\Images\info.png" />
+    <Content Include="App_Themes\Admin\Images\inserir_arquivos1.jpg" />
+    <Content Include="App_Themes\Admin\Images\loading.gif" />
+    <Content Include="App_Themes\Admin\Images\picts_16.png" />
+    <Content Include="App_Themes\Admin\Images\ref_16.gif" />
+    <Content Include="App_Themes\Admin\Images\remove-trans.png" />
+    <Content Include="App_Themes\Admin\Images\Save_16.png" />
+    <Content Include="App_Themes\Admin\Images\srch_16.png" />
+    <Content Include="App_Themes\Admin\Images\top01.jpg" />
+    <Content Include="App_Themes\Admin\Images\top02.jpg" />
+    <Content Include="App_Themes\Admin\Images\topLogin.jpg" />
+    <Content Include="App_Themes\Admin\menu.css" />
+    <Content Include="App_Themes\Admin\principal.css" />
+    <Content Include="App_Themes\BlackGlass\Web\Loading.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\mHorizontalPopOut.png" />
+    <Content Include="App_Themes\BlackGlass\Web\mItemBack.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\mItemBackH.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\mItemBackLevel0.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\mItemBackS.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\mSubMenuItem.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\mSubMenuItemChecked.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\mVerticalItemBack.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\mVerticalPopOut.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\nbCollapse.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\nbExpand.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\nbItemBack.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\nbItemBackH.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\pAll.png" />
+    <Content Include="App_Themes\BlackGlass\Web\pAllDisabled.png" />
+    <Content Include="App_Themes\BlackGlass\Web\pcCloseButton.png" />
+    <Content Include="App_Themes\BlackGlass\Web\pcItemCloseButton.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\pcItemFooter.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\pcItemHeader.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\pcModalBack.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\pcSizeGrip.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\pcTabBack.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\pcTabBackH.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\pFirst.png" />
+    <Content Include="App_Themes\BlackGlass\Web\pFirstDisabled.png" />
+    <Content Include="App_Themes\BlackGlass\Web\pLast.png" />
+    <Content Include="App_Themes\BlackGlass\Web\pLastDisabled.png" />
+    <Content Include="App_Themes\BlackGlass\Web\pNext.png" />
+    <Content Include="App_Themes\BlackGlass\Web\pNextDisabled.png" />
+    <Content Include="App_Themes\BlackGlass\Web\pPrev.png" />
+    <Content Include="App_Themes\BlackGlass\Web\pPrevDisabled.png" />
+    <Content Include="App_Themes\BlackGlass\Web\rpBottomLeftCorner.png" />
+    <Content Include="App_Themes\BlackGlass\Web\rpBottomRightCorner.png" />
+    <Content Include="App_Themes\BlackGlass\Web\rpContentBack.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\rpContentBottomEdge.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\rpContentLeftEdge.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\rpContentRightEdge.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\rpHeaderBack.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\rpHeaderLeftEdge.png" />
+    <Content Include="App_Themes\BlackGlass\Web\rpHeaderRightEdge.png" />
+    <Content Include="App_Themes\BlackGlass\Web\rpNoHeaderTopLeftCorner.png" />
+    <Content Include="App_Themes\BlackGlass\Web\rpNoHeaderTopRightCorner.png" />
+    <Content Include="App_Themes\BlackGlass\Web\rpTopEdge.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\rpTopLeftCorner.png" />
+    <Content Include="App_Themes\BlackGlass\Web\rpTopRightCorner.png" />
+    <Content Include="App_Themes\BlackGlass\Web\smBullet.png" />
+    <Content Include="App_Themes\BlackGlass\Web\styles.css" />
+    <Content Include="App_Themes\BlackGlass\Web\tcTabBack.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\tcTabBackH.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\tiItemBack.gif" />
+    <Content Include="App_Themes\BlackGlass\Web\ucProgressIndicatorBack.gif" />
+    <Content Include="App_Themes\Default\bootstrap-responsive.css" />
+    <Content Include="App_Themes\Default\bootstrap.css" />
+    <Content Include="App_Themes\Default\grid.css" />
+    <Content Include="App_Themes\Default\images\add-1.jpg" />
+    <Content Include="App_Themes\Default\images\add-2.jpg" />
+    <Content Include="App_Themes\Default\images\baground-image.jpg" />
+    <Content Include="App_Themes\Default\images\ball-one.png" />
+    <Content Include="App_Themes\Default\images\ball-two.png" />
+    <Content Include="App_Themes\Default\images\calendario-novo-2.jpg" />
+    <Content Include="App_Themes\Default\images\calendario-novo.jpg" />
+    <Content Include="App_Themes\Default\images\calendario.jpg" />
+    <Content Include="App_Themes\Default\images\calendario.png" />
+    <Content Include="App_Themes\Default\images\cestinhasArtilheiros.jpg" />
+    <Content Include="App_Themes\Default\images\company-logo.png" />
+    <Content Include="App_Themes\Default\images\curosel-left-nav.png" />
+    <Content Include="App_Themes\Default\images\curosel-right-nav.png" />
+    <Content Include="App_Themes\Default\images\events-bg.jpg" />
+    <Content Include="App_Themes\Default\images\facebook.png" />
+    <Content Include="App_Themes\Default\images\fb-like.jpg" />
+    <Content Include="App_Themes\Default\images\footer-patern.png" />
+    <Content Include="App_Themes\Default\images\ft-logo.png" />
+    <Content Include="App_Themes\Default\images\ft-nav-bg.png" />
+    <Content Include="App_Themes\Default\images\gall-thumb1.jpg" />
+    <Content Include="App_Themes\Default\images\gall-thumb2.jpg" />
+    <Content Include="App_Themes\Default\images\gall-thumb3.jpg" />
+    <Content Include="App_Themes\Default\images\gall-thumb4.jpg" />
+    <Content Include="App_Themes\Default\images\gallery-big-player.jpg" />
+    <Content Include="App_Themes\Default\images\HandShow.jpg" />
+    <Content Include="App_Themes\Default\images\icoAlterar.png" />
+    <Content Include="App_Themes\Default\images\icoFoto.png" />
+    <Content Include="App_Themes\Default\images\icoInscricao.png" />
+    <Content Include="App_Themes\Default\images\icoMinhasInscricoes.png" />
+    <Content Include="App_Themes\Default\images\icoSair.png" />
+    <Content Include="App_Themes\Default\images\icoSenha.png" />
+    <Content Include="App_Themes\Default\images\img-pop-icon.png" />
+    <Content Include="App_Themes\Default\images\js-remocoes.jpg" />
+    <Content Include="App_Themes\Default\images\judo.jpg" />
+    <Content Include="App_Themes\Default\images\liga-fb.jpg" />
+    <Content Include="App_Themes\Default\images\line-patern.png" />
+    <Content Include="App_Themes\Default\images\logo_bolar.png" />
+    <Content Include="App_Themes\Default\images\logo_esporte_universitario.net.jpg" />
+    <Content Include="App_Themes\Default\images\modalidade-Atletismo.jpg" />
+    <Content Include="App_Themes\Default\images\modalidade-JiuJitsu.jpg" />
+    <Content Include="App_Themes\Default\images\modalidade-Judo.jpg" />
+    <Content Include="App_Themes\Default\images\modalidade-Natacao.jpg" />
+    <Content Include="App_Themes\Default\images\nav-bg.png" />
+    <Content Include="App_Themes\Default\images\nav-libg.png" />
+    <Content Include="App_Themes\Default\images\note-img.png" />
+    <Content Include="App_Themes\Default\images\partners\partner1.jpg" />
+    <Content Include="App_Themes\Default\images\partners\partner2-75px.jpg" />
+    <Content Include="App_Themes\Default\images\partners\partner2.jpg" />
+    <Content Include="App_Themes\Default\images\partners\partner3.jpg" />
+    <Content Include="App_Themes\Default\images\partners\partner4.jpg" />
+    <Content Include="App_Themes\Default\images\partners\partner5.jpg" />
+    <Content Include="App_Themes\Default\images\recopa-universitaria-paulista.jpg" />
+    <Content Include="App_Themes\Default\images\slider-left-nav.png" />
+    <Content Include="App_Themes\Default\images\slider-nav-bg.png" />
+    <Content Include="App_Themes\Default\images\slider-right-nav.png" />
+    <Content Include="App_Themes\Default\images\slider\slide-1.jpg" />
+    <Content Include="App_Themes\Default\images\tab-bg.png" />
+    <Content Include="App_Themes\Default\images\team-divider.png" />
+    <Content Include="App_Themes\Default\images\team1.png" />
+    <Content Include="App_Themes\Default\images\team2.png" />
+    <Content Include="App_Themes\Default\images\thumb-slider\img1.jpg" />
+    <Content Include="App_Themes\Default\images\thumb-slider\img2.jpg" />
+    <Content Include="App_Themes\Default\images\thumb-slider\img3.jpg" />
+    <Content Include="App_Themes\Default\images\twitter.png" />
+    <Content Include="App_Themes\Default\jquery.fancybox.css" />
+    <Content Include="App_Themes\Default\style.css" />
+    <Content Include="App_Themes\Mobile\Images\bgBtn.jpg" />
+    <Content Include="App_Themes\Mobile\Images\logoLigaPaulistaMobile.jpg" />
+    <Content Include="App_Themes\Mobile\Images\_repeat.png" />
+    <Content Include="App_Themes\Mobile\principal.css" />
+    <Content Include="artilheiros.aspx" />
+    <Content Include="artilheiros_categorias.aspx" />
+    <Content Include="cadastro-simples.aspx" />
+    <Content Include="cadastro.aspx" />
+    <Content Include="calendario-formulario.aspx" />
+    <Content Include="calendarios.aspx" />
+    <Content Include="campeonato-federados.aspx" />
+    <Content Include="cartoesatletas.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="EntidadesAdm.aspx" />
+    <Content Include="eventos-inscricoes.aspx" />
+    <Content Include="eventos.aspx" />
+    <Content Include="export.aspx" />
+    <Content Include="fileManager.aspx" />
+    <Content Include="grupos.aspx" />
+    <Content Include="htmlEditor.ascx" />
+    <Content Include="imagens\aaamat.jpg" />
+    <Content Include="imagens\AAAUG.jpg" />
+    <Content Include="imagens\AtleticaAnhanguera.jpg" />
+    <Content Include="imagens\AtleticaESPM.jpg" />
+    <Content Include="imagens\brasao-atletica.jpg" />
+    <Content Include="imagens\CONVITE.jpg" />
+    <Content Include="imagens\eca-usp.jpg" />
+    <Content Include="imagens\fecaf.png" />
+    <Content Include="imagens\fsl.gif" />
+    <Content Include="imagens\getulioVargas.jpg" />
+    <Content Include="imagens\lg_aaa.jpg" />
+    <Content Include="imagens\lg_aaaltjr.jpg" />
+    <Content Include="imagens\lg_aaanmc.jpg" />
+    <Content Include="imagens\lg_aaapoli.jpg" />
+    <Content Include="imagens\lg_anhembi.jpg" />
+    <Content Include="imagens\lg_atleticametodista.jpg" />
+    <Content Include="imagens\lg_casper.jpg" />
+    <Content Include="imagens\lg_cbdu.jpg" />
+    <Content Include="imagens\lg_coruja.jpg" />
+    <Content Include="imagens\lg_cpu.jpg" />
+    <Content Include="imagens\lg_drummond.jpg" />
+    <Content Include="imagens\lg_engMack.jpg" />
+    <Content Include="imagens\lg_eniac.jpg" />
+    <Content Include="imagens\lg_faap.jpg" />
+    <Content Include="imagens\lg_faapdireito.jpg" />
+    <Content Include="imagens\lg_faenac.jpg" />
+    <Content Include="imagens\lg_fastplay.jpg" />
+    <Content Include="imagens\lg_fecap.jpg" />
+    <Content Include="imagens\lg_fefisa.jpg" />
+    <Content Include="imagens\lg_fei.jpg" />
+    <Content Include="imagens\lg_fmu.jpg" />
+    <Content Include="imagens\lg_fsa.jpg" />
+    <Content Include="imagens\lg_fupe.jpg" />
+    <Content Include="imagens\lg_iesa.jpg" />
+    <Content Include="imagens\lg_imes.jpg" />
+    <Content Include="imagens\lg_italo.jpg" />
+    <Content Include="imagens\lg_lep.jpg" />
+    <Content Include="imagens\lg_lobo.jpg" />
+    <Content Include="imagens\lg_lu.jpg" />
+    <Content Include="imagens\lg_lupef.jpg" />
+    <Content Include="imagens\lg_mackaaaaa.jpg" />
+    <Content Include="imagens\lg_mackca.jpg" />
+    <Content Include="imagens\lg_mackenzie.jpg" />
+    <Content Include="imagens\lg_maxima.gif" />
+    <Content Include="imagens\lg_medpaulista.jpg" />
+    <Content Include="imagens\lg_metodista.jpg" />
+    <Content Include="imagens\lg_poliusp.jpg" />
+    <Content Include="imagens\lg_puc.jpg" />
+    <Content Include="imagens\lg_santacasa.jpg" />
+    <Content Include="imagens\lg_saobernardo.jpg" />
+    <Content Include="imagens\lg_saocamilo.jpg" />
+    <Content Include="imagens\lg_saofrancisco.jpg" />
+    <Content Include="imagens\lg_ufscar.jpg" />
+    <Content Include="imagens\lg_ufscaraaa.jpg" />
+    <Content Include="imagens\lg_unia.jpg" />
+    <Content Include="imagens\lg_uniabc.jpg" />
+    <Content Include="imagens\lg_uniban.jpg" />
+    <Content Include="imagens\lg_unicapital.jpg" />
+    <Content Include="imagens\lg_usp.jpg" />
+    <Content Include="imagens\lg_USPmed.jpg" />
+    <Content Include="imagens\LogotipoAAAUD.jpg" />
+    <Content Include="imagens\logo_aaaEachUsp.jpg" />
+    <Content Include="imagens\logo_aaaEugenioGudin.jpg" />
+    <Content Include="imagens\logo_aesportiva.jpg" />
+    <Content Include="imagens\logo_atletica.jpg" />
+    <Content Include="imagens\logo_atleticaGeralUSCS.jpg" />
+    <Content Include="imagens\logo_axis.jpg" />
+    <Content Include="imagens\logo_b&amp;b.jpg" />
+    <Content Include="imagens\logo_bolar.png" />
+    <Content Include="imagens\logo_daquiprafora.jpg" />
+    <Content Include="imagens\logo_direitoAtletica.jpg" />
+    <Content Include="imagens\logo_engUnicamp.jpg" />
+    <Content Include="imagens\logo_fecap.jpg" />
+    <Content Include="imagens\logo_grifoAnhembiMorumbi.jpg" />
+    <Content Include="imagens\logo_pucDireito.jpg" />
+    <Content Include="imagens\logo_rb.jpg" />
+    <Content Include="imagens\logo_VeterinariaUsp.jpg" />
+    <Content Include="imagens\medicina-taubate.jpg" />
+    <Content Include="imagens\medicinaPuccamp.jpg" />
+    <Content Include="imagens\medicinaSantos.gif" />
+    <Content Include="imagens\popUp.gif" />
+    <Content Include="imagens\popUp.jpg" />
+    <Content Include="imagens\popUpOld.jpg" />
+    <Content Include="imagens\popUpTorneioInternacional.jpg" />
+    <Content Include="imagens\saoJudas.jpg" />
+    <Content Include="imagens\thumbs\basquete-feminino.jpg" />
+    <Content Include="imagens\thumbs\basquete-masculino.jpg" />
+    <Content Include="imagens\thumbs\futsal-feminino.jpg" />
+    <Content Include="imagens\thumbs\futsal-masculino.jpg" />
+    <Content Include="imagens\thumbs\handebol-feminino.jpg" />
+    <Content Include="imagens\thumbs\handebol-masculino.jpg" />
+    <Content Include="imagens\thumbs\taekwondo.gif" />
+    <Content Include="imagens\thumbs\voley-feminino.jpg" />
+    <Content Include="imagens\thumbs\voley-masculino.jpg" />
+    <Content Include="jogos-ficha-tecnica.aspx" />
+    <Content Include="jogos.aspx" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-1.9.1.min.js" />
+    <Content Include="js\jquery.carouFredSel-6.2.1-packed.js" />
+    <Content Include="js\jquery.fancybox.js" />
+    <Content Include="js\script.js" />
+    <Content Include="localidades.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="menu.ascx" />
+    <Content Include="modalidade-arquivos.aspx" />
+    <Content Include="modalidade-manutencao.aspx" />
+    <Content Include="modalidades.aspx" />
+    <Content Include="pedidos-carteirinhas.aspx" />
+    <Content Include="periodos.aspx" />
+    <Content Include="principal.aspx" />
+    <Content Include="rodape.ascx" />
+    <Content Include="scripts\AC_RunActiveContent.js" />
+    <Content Include="scripts\css\jquery.dataTables.css" />
+    <Content Include="scripts\css\jquery.dataTables.min.css" />
+    <Content Include="scripts\css\jquery.dataTables_themeroller.css" />
+    <Content Include="scripts\funcoes.js" />
+    <Content Include="scripts\gridviewCustomization.js" />
+    <Content Include="scripts\images\back_disabled.png" />
+    <Content Include="scripts\images\back_enabled.png" />
+    <Content Include="scripts\images\back_enabled_hover.png" />
+    <Content Include="scripts\images\favicon.ico" />
+    <Content Include="scripts\images\forward_disabled.png" />
+    <Content Include="scripts\images\forward_enabled.png" />
+    <Content Include="scripts\images\forward_enabled_hover.png" />
+    <Content Include="scripts\images\sort_asc.png" />
+    <Content Include="scripts\images\sort_asc_disabled.png" />
+    <Content Include="scripts\images\sort_both.png" />
+    <Content Include="scripts\images\sort_desc.png" />
+    <Content Include="scripts\images\sort_desc_disabled.png" />
+    <Content Include="scripts\jquery.dataTables.min.js" />
+    <Content Include="scripts\jquery.mask.min.js" />
+    <Content Include="scripts\jQuery\jquery.js" />
+    <Content Include="scripts\jQuery\jquery.notifyBar.js" />
+    <Content Include="scripts\milkbox\close.gif" />
+    <Content Include="scripts\milkbox\loading.gif" />
+    <Content Include="scripts\milkbox\milkbox.css" />
+    <Content Include="scripts\milkbox\milkbox.js" />
+    <Content Include="scripts\milkbox\mootools-1.2-more.js" />
+    <Content Include="scripts\milkbox\mootools-1.2.1-core-yc.js" />
+    <Content Include="scripts\milkbox\next.gif" />
+    <Content Include="scripts\milkbox\play-pause.gif" />
+    <Content Include="scripts\milkbox\prev.gif" />
+    <Content Include="scripts\popupControl.js" />
+    <Content Include="scripts\prettyphoto\css\prettyPhoto.css" />
+    <Content Include="scripts\prettyphoto\images\fullscreen\1.jpg" />
+    <Content Include="scripts\prettyphoto\images\fullscreen\2.jpg" />
+    <Content Include="scripts\prettyphoto\images\fullscreen\3.jpg" />
+    <Content Include="scripts\prettyphoto\images\fullscreen\4.jpg" />
+    <Content Include="scripts\prettyphoto\images\fullscreen\5.jpg" />
+    <Content Include="scripts\prettyphoto\images\fullscreen\6.jpg" />
+    <Content Include="scripts\prettyphoto\images\fullscreen\high.gif" />
+    <Content Include="scripts\prettyphoto\images\fullscreen\huge.gif" />
+    <Content Include="scripts\prettyphoto\images\fullscreen\wide.gif" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\default\default_thumb.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\default\loader.gif" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\default\sprite.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\default\sprite_next.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\default\sprite_x.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\default\sprite_y.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\light_square\loader.gif" />
+    <Content Include="scripts\prettyphoto\images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="scripts\prettyphoto\images\thumbnails\flash-logo.png" />
+    <Content Include="scripts\prettyphoto\images\thumbnails\quicktime-logo.gif" />
+    <Content Include="scripts\prettyphoto\images\thumbnails\t_1.jpg" />
+    <Content Include="scripts\prettyphoto\images\thumbnails\t_2.jpg" />
+    <Content Include="scripts\prettyphoto\images\thumbnails\t_3.jpg" />
+    <Content Include="scripts\prettyphoto\images\thumbnails\t_4.jpg" />
+    <Content Include="scripts\prettyphoto\images\thumbnails\t_5.jpg" />
+    <Content Include="scripts\prettyphoto\index.html" />
+    <Content Include="scripts\prettyphoto\js\jquery-1.3.2.min.js" />
+    <Content Include="scripts\prettyphoto\js\jquery-1.4.4.min.js" />
+    <Content Include="scripts\prettyphoto\js\jquery-1.6.1.min.js" />
+    <Content Include="scripts\prettyphoto\js\jquery.prettyPhoto.js" />
+    <Content Include="scripts\prettyphoto\xhr_response.html" />
+    <Content Include="scripts\system.js" />
+    <Content Include="topo.ascx" />
+    <Content Include="usuarios.aspx" />
+    <Content Include="validar.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.master.cs">
+      <DependentUpon>Admin.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.master.designer.cs">
+      <DependentUpon>Admin.master</DependentUpon>
+    </Compile>
+    <Compile Include="album.aspx.cs">
+      <DependentUpon>album.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="album.aspx.designer.cs">
+      <DependentUpon>album.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="album_add.aspx.cs">
+      <DependentUpon>album_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="album_add.aspx.designer.cs">
+      <DependentUpon>album_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="album_categoria.aspx.cs">
+      <DependentUpon>album_categoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="album_categoria.aspx.designer.cs">
+      <DependentUpon>album_categoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="album_fotos.aspx.cs">
+      <DependentUpon>album_fotos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="album_fotos.aspx.designer.cs">
+      <DependentUpon>album_fotos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="album_fotos_lista.aspx.cs">
+      <DependentUpon>album_fotos_lista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="album_fotos_lista.aspx.designer.cs">
+      <DependentUpon>album_fotos_lista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="artilheiros.aspx.cs">
+      <DependentUpon>artilheiros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="artilheiros.aspx.designer.cs">
+      <DependentUpon>artilheiros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="artilheiros_categorias.aspx.cs">
+      <DependentUpon>artilheiros_categorias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="artilheiros_categorias.aspx.designer.cs">
+      <DependentUpon>artilheiros_categorias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastro-simples.aspx.cs">
+      <DependentUpon>cadastro-simples.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastro-simples.aspx.designer.cs">
+      <DependentUpon>cadastro-simples.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastro.aspx.cs">
+      <DependentUpon>cadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastro.aspx.designer.cs">
+      <DependentUpon>cadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="calendario-formulario.aspx.cs">
+      <DependentUpon>calendario-formulario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="calendario-formulario.aspx.designer.cs">
+      <DependentUpon>calendario-formulario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="calendarios.aspx.cs">
+      <DependentUpon>calendarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="calendarios.aspx.designer.cs">
+      <DependentUpon>calendarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="campeonato-federados.aspx.cs">
+      <DependentUpon>campeonato-federados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="campeonato-federados.aspx.designer.cs">
+      <DependentUpon>campeonato-federados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cartoesatletas.aspx.cs">
+      <DependentUpon>cartoesatletas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cartoesatletas.aspx.designer.cs">
+      <DependentUpon>cartoesatletas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EntidadesAdm.aspx.cs">
+      <DependentUpon>EntidadesAdm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntidadesAdm.aspx.designer.cs">
+      <DependentUpon>EntidadesAdm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eventos-inscricoes.aspx.cs">
+      <DependentUpon>eventos-inscricoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eventos-inscricoes.aspx.designer.cs">
+      <DependentUpon>eventos-inscricoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eventos.aspx.cs">
+      <DependentUpon>eventos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eventos.aspx.designer.cs">
+      <DependentUpon>eventos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="export.aspx.cs">
+      <DependentUpon>export.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="export.aspx.designer.cs">
+      <DependentUpon>export.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fileManager.aspx.cs">
+      <DependentUpon>fileManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fileManager.aspx.designer.cs">
+      <DependentUpon>fileManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="grupos.aspx.cs">
+      <DependentUpon>grupos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="grupos.aspx.designer.cs">
+      <DependentUpon>grupos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="htmlEditor.ascx.cs">
+      <DependentUpon>htmlEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="htmlEditor.ascx.designer.cs">
+      <DependentUpon>htmlEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="jogos-ficha-tecnica.aspx.cs">
+      <DependentUpon>jogos-ficha-tecnica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jogos-ficha-tecnica.aspx.designer.cs">
+      <DependentUpon>jogos-ficha-tecnica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jogos.aspx.cs">
+      <DependentUpon>jogos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jogos.aspx.designer.cs">
+      <DependentUpon>jogos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="localidades.aspx.cs">
+      <DependentUpon>localidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="localidades.aspx.designer.cs">
+      <DependentUpon>localidades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu.ascx.cs">
+      <DependentUpon>menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu.ascx.designer.cs">
+      <DependentUpon>menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="modalidade-arquivos.aspx.cs">
+      <DependentUpon>modalidade-arquivos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modalidade-arquivos.aspx.designer.cs">
+      <DependentUpon>modalidade-arquivos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="modalidade-manutencao.aspx.cs">
+      <DependentUpon>modalidade-manutencao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modalidade-manutencao.aspx.designer.cs">
+      <DependentUpon>modalidade-manutencao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="modalidades.aspx.cs">
+      <DependentUpon>modalidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modalidades.aspx.designer.cs">
+      <DependentUpon>modalidades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pedidos-carteirinhas.aspx.cs">
+      <DependentUpon>pedidos-carteirinhas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pedidos-carteirinhas.aspx.designer.cs">
+      <DependentUpon>pedidos-carteirinhas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="periodos.aspx.cs">
+      <DependentUpon>periodos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="periodos.aspx.designer.cs">
+      <DependentUpon>periodos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="principal.aspx.cs">
+      <DependentUpon>principal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="principal.aspx.designer.cs">
+      <DependentUpon>principal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rodape.ascx.cs">
+      <DependentUpon>rodape.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rodape.ascx.designer.cs">
+      <DependentUpon>rodape.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="topo.ascx.cs">
+      <DependentUpon>topo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="topo.ascx.designer.cs">
+      <DependentUpon>topo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usuarios.aspx.cs">
+      <DependentUpon>usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usuarios.aspx.designer.cs">
+      <DependentUpon>usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="validar.aspx.cs">
+      <DependentUpon>validar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="validar.aspx.designer.cs">
+      <DependentUpon>validar.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LigaPaulista.Core\LigaPaulista.Core.csproj">
+      <Project>{c5fb32ba-baf3-4004-a0fc-e0b4fc9f4ebd}</Project>
+      <Name>LigaPaulista.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="imagens\clipping\" />
+    <Folder Include="imagens\temp\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5104</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:5104/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,56 @@
+﻿/* CSS ADM Pequim com LG  */
+
+body { background-color:#fff;
+       font-family: verdana;
+       font-size:12px; 
+       color:#333;
+       margin:5px;
+   }
+  
+#estrutura 
+{
+			width:99%;
+			_width:100%;
+			min-width:770px;
+			position:absolute;
+			background-color:White;
+     }
+
+img { border:none;}     
+
+#topo { 
+		position:relative;
+		z-index:2;
+		height:124px;
+		background-color:#FFF;
+		background-image:url(Images/bgtop.jpg);
+		background-position:right top;
+		background-repeat:no-repeat;
+	}  
+	
+#meio { position:relative;
+		margin:5px;
+	}
+
+#rodape { height:25px;
+		  position:relative;
+		  background-color:#dcf4d0;
+		  clear:both;
+	}
+
+#login { width:380px;
+		 height:216px;
+		 position:absolute;
+		 margin-left:-190px;
+		 left:50%;
+		 top:50%;
+		 border:1px solid #ccc;
+		 margin-top:-108px;
+		 background-color:#fff;
+	}
+	
+fieldset { border:1px solid #ccc; padding:4px;}	
+fieldset legend { color:#333;
+				font-size:15px;
+				font-weight:bold;
+	 }			  

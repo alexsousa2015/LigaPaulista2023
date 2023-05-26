@@ -1,0 +1,47 @@
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\bin\Debug\LigaPaulista.Core.dll
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\bin\Debug\LigaPaulista.Core.pdb
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\bin\Debug\Facebook.dll
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\bin\Debug\Formula.dll
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\bin\Debug\MySql.Data.dll
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\bin\Debug\Google.GData.Photos.dll
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\bin\Debug\Google.GData.Client.dll
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\bin\Debug\Google.GData.Extensions.dll
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\bin\Debug\Formula.pdb
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.dll
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.pdb
+D:\BitbucketHD\fw-ligapaulista\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.csprojResolveAssemblyReference.cache
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\bin\Debug\LigaPaulista.Core.dll
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\bin\Debug\LigaPaulista.Core.pdb
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\bin\Debug\Facebook.dll
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\bin\Debug\Formula.dll
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\bin\Debug\MySql.Data.dll
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\bin\Debug\Google.GData.Photos.dll
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\bin\Debug\Google.GData.Client.dll
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\bin\Debug\Google.GData.Extensions.dll
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\bin\Debug\Formula.pdb
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.csprojResolveAssemblyReference.cache
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.dll
+D:\BitbucketHD\ligapaulista\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.pdb
+C:\Dev\ligapaulista\LigaPaulista.Core\bin\Debug\LigaPaulista.Core.dll
+C:\Dev\ligapaulista\LigaPaulista.Core\bin\Debug\LigaPaulista.Core.pdb
+C:\Dev\ligapaulista\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.dll
+C:\Dev\ligapaulista\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.pdb
+C:\Dev\ligapaulista\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.csprojResolveAssemblyReference.cache
+C:\Dev\LigaPaulista\src\LigaPaulista.Core\bin\Debug\LigaPaulista.Core.dll
+C:\Dev\LigaPaulista\src\LigaPaulista.Core\bin\Debug\LigaPaulista.Core.pdb
+C:\Dev\LigaPaulista\src\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.csprojResolveAssemblyReference.cache
+C:\Dev\LigaPaulista\src\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.dll
+C:\Dev\LigaPaulista\src\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.pdb
+C:\Projetos extra\LigaPaulista\master\src\LigaPaulista.Core\bin\Debug\LigaPaulista.Core.dll
+C:\Projetos extra\LigaPaulista\master\src\LigaPaulista.Core\bin\Debug\LigaPaulista.Core.pdb
+C:\Projetos extra\LigaPaulista\master\src\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.dll
+C:\Projetos extra\LigaPaulista\master\src\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.pdb
+C:\Projetos extra\LigaPaulista\master\src\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.csprojAssemblyReference.cache
+C:\Projetos extra\LigaPaulista\master\src\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.csproj.CoreCompileInputs.cache
+C:\Projetos extra\LigaPaulista\master\src\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.csproj.CopyComplete
+C:\Users\Alex Note\Desktop\LigaPaulista\master\src\LigaPaulista.Core\bin\Debug\LigaPaulista.Core.dll
+C:\Users\Alex Note\Desktop\LigaPaulista\master\src\LigaPaulista.Core\bin\Debug\LigaPaulista.Core.pdb
+C:\Users\Alex Note\Desktop\LigaPaulista\master\src\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.csprojAssemblyReference.cache
+C:\Users\Alex Note\Desktop\LigaPaulista\master\src\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.csproj.CopyComplete
+C:\Users\Alex Note\Desktop\LigaPaulista\master\src\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.dll
+C:\Users\Alex Note\Desktop\LigaPaulista\master\src\LigaPaulista.Core\obj\Debug\LigaPaulista.Core.pdb

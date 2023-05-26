@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C5FB32BA-BAF3-4004-A0FC-E0B4FC9F4EBD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LigaPaulista.Core</RootNamespace>
+    <AssemblyName>LigaPaulista.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Formula, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Formula.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Album.cs" />
+    <Compile Include="Arquivo.cs" />
+    <Compile Include="Artilharia.cs" />
+    <Compile Include="AtoOficial.cs" />
+    <Compile Include="Business\Campeonatos\Artilharia.cs" />
+    <Compile Include="Business\Campeonatos\Jogos.cs" />
+    <Compile Include="Business\Entidades\Entidades.cs" />
+    <Compile Include="Business\Eventos\EventosInscricoesDocs.cs" />
+    <Compile Include="Business\Eventos\EventosInscricoes.cs" />
+    <Compile Include="Business\Eventos\EventosDocs.cs" />
+    <Compile Include="Business\Eventos\Eventos.cs" />
+    <Compile Include="Cadastro.cs" />
+    <Compile Include="Campeonatos\Campeonato.cs" />
+    <Compile Include="Campeonatos\Faculdade.cs" />
+    <Compile Include="Campeonatos\Grupos.cs" />
+    <Compile Include="Campeonatos\GrupoCampeonato.cs" />
+    <Compile Include="Campeonatos\Grupo_Faculdade.cs" />
+    <Compile Include="Campeonatos\Jogos.cs" />
+    <Compile Include="Campeonatos\Localidade.cs" />
+    <Compile Include="Campeonatos\Modalidade.cs" />
+    <Compile Include="Categoria.cs" />
+    <Compile Include="Conexoes.cs" />
+    <Compile Include="DataAccess\Campeonatos\Artilharia.cs" />
+    <Compile Include="DataAccess\Campeonatos\Campeonatos.cs" />
+    <Compile Include="DataAccess\Campeonatos\Jogos.cs" />
+    <Compile Include="DataAccess\Campeonatos\Modalidades.cs" />
+    <Compile Include="DataAccess\Campeonatos\Grupos.cs" />
+    <Compile Include="DataAccess\Campeonatos\Entidades.cs" />
+    <Compile Include="DataAccess\Campeonatos\Periodos.cs" />
+    <Compile Include="DataAccess\Entidades\Entidades.cs" />
+    <Compile Include="DataAccess\Eventos\EventosInscricoesDocs.cs" />
+    <Compile Include="DataAccess\Eventos\EventosDocs.cs" />
+    <Compile Include="DataAccess\Eventos\EventosInscricoes.cs" />
+    <Compile Include="DataAccess\Eventos\Eventos.cs" />
+    <Compile Include="DataAccess\Sql\Campeonatos\Artilharia.cs" />
+    <Compile Include="DataAccess\Sql\Campeonatos\Campeonatos.cs" />
+    <Compile Include="DataAccess\Sql\Campeonatos\Jogos.cs" />
+    <Compile Include="DataAccess\Sql\Campeonatos\Modalidades.cs" />
+    <Compile Include="DataAccess\Sql\Campeonatos\Grupos.cs" />
+    <Compile Include="DataAccess\Sql\Campeonatos\Entidades.cs" />
+    <Compile Include="DataAccess\Sql\Campeonatos\Periodos.cs" />
+    <Compile Include="DataAccess\Sql\Entidades\Entidades.cs" />
+    <Compile Include="DataAccess\Sql\Eventos\EventosInscricoesDocs.cs" />
+    <Compile Include="DataAccess\Sql\Eventos\EventosDocs.cs" />
+    <Compile Include="DataAccess\Sql\Eventos\EventosInscricoes.cs" />
+    <Compile Include="DataAccess\Sql\Eventos\Eventos.cs" />
+    <Compile Include="Foto.cs" />
+    <Compile Include="GaleriaFotos.cs" />
+    <Compile Include="Imagens.cs" />
+    <Compile Include="Login.cs" />
+    <Compile Include="Calendario.cs" />
+    <Compile Include="Noticia.cs" />
+    <Compile Include="Objects\Campeonatos\Artilharia.cs" />
+    <Compile Include="Objects\Campeonatos\Campeonatos.cs" />
+    <Compile Include="Objects\Campeonatos\Grupos.cs" />
+    <Compile Include="Objects\Campeonatos\Jogos.cs" />
+    <Compile Include="Objects\Campeonatos\Localidades.cs" />
+    <Compile Include="Objects\Campeonatos\Modalidades.cs" />
+    <Compile Include="Objects\Campeonatos\Entidades.cs" />
+    <Compile Include="Objects\Campeonatos\Periodos.cs" />
+    <Compile Include="Objects\Entidades\Carteirinhas.cs" />
+    <Compile Include="Objects\Entidades\Entidades.cs" />
+    <Compile Include="Objects\Eventos\EventosInscricoesDocs.cs" />
+    <Compile Include="Objects\Eventos\EventosInscricoes.cs" />
+    <Compile Include="Objects\Eventos\EventosDocs.cs" />
+    <Compile Include="Objects\Eventos\Eventos.cs" />
+    <Compile Include="Objects\Facebook\Albuns.cs" />
+    <Compile Include="Objects\Facebook\Photos.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SDK\DAO\BaseDataAccess.cs" />
+    <Compile Include="SDK\DAO\CustomAttributes\CustomAttributesParameter.cs" />
+    <Compile Include="SDK\Enum\EnumGeral.cs" />
+    <Compile Include="SDK\Exception\Exception.cs" />
+    <Compile Include="SDK\Exception\Settings.cs" />
+    <Compile Include="SDK\Utils\CarregarObjetos.cs" />
+    <Compile Include="SDK\Utils\DynamicClass.cs" />
+    <Compile Include="SDK\Utils\EncryptHelper.cs" />
+    <Compile Include="SDK\Utils\EnviarEmail.cs" />
+    <Compile Include="SDK\Utils\ImageResize.cs" />
+    <Compile Include="SDK\Utils\Serializer.cs" />
+    <Compile Include="SDK\Utils\SpecialCharacters.cs" />
+    <Compile Include="Tribunal.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
